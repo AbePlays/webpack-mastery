@@ -1,0 +1,13 @@
+{
+  "name": "react-webpack-mastery",
+  "version": "1.0.0",
+  "description": "A hands-on learning project that explores React and Webpack, providing a practical and educational experience for mastering modern web development.",
+  "main": "src/index.js",
+  "scripts": {},
+  "author": "Abhishek Rawat",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.85.0",
+    "webpack-cli": "^5.1.1"
+  }
+}
