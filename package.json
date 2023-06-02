@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A hands-on learning project that explores React and Webpack, providing a practical and educational experience for mastering modern web development.",
   "main": "src/index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
   "author": "Abhishek Rawat",
   "license": "MIT",
   "devDependencies": {
