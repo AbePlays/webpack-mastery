@@ -1,3 +1,5 @@
+import './index.css'
+
 const form = document.getElementById('add-form')
 const output = document.getElementById('result')
 
