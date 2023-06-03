@@ -9,6 +9,6 @@ function sum(nums) {
 form.addEventListener('submit', (e) => {
   e.preventDefault()
   const { first, second } = e.target.elements
-  const sum = sum([+first.value, +second.value])
-  output.innerText = `Total = ${sum}`
+  const result = sum([+first.value, +second.value])
+  output.innerText = `Total = ${result}`
 })
