@@ -9,6 +9,7 @@
   "author": "Abhishek Rawat",
   "license": "MIT",
   "devDependencies": {
+    "html-webpack-plugin": "^5.5.1",
     "webpack": "^5.85.0",
     "webpack-cli": "^5.1.1"
   }
