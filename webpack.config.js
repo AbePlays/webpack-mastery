@@ -1,6 +1,7 @@
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const { PurgeCSSPlugin } = require('purgecss-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const path = require('path')
 
@@ -28,6 +29,9 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'index.css',
+    }),
+    new PurgeCSSPlugin({
+      paths: ['./src/index.html'],
     }),
   ],
 }
