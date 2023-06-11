@@ -1,7 +1,9 @@
 /* https://www.swyx.io/css-100-bytes */
 
+$mw: 70ch;
+
 html {
-  max-width: 70ch;
+  max-width: $mw;
   padding: 3em 1em;
   margin: auto;
   line-height: 1.75;

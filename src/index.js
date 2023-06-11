@@ -1,4 +1,4 @@
-import './index.css'
+import './index.scss'
 
 const form = document.getElementById('add-form')
 const output = document.getElementById('result')
