@@ -6,12 +6,16 @@ const TerserPlugin = require('terser-webpack-plugin')
 const path = require('path')
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.ts',
   module: {
     rules: [
       {
         test: /\.scss$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.ts$/,
+        use: 'ts-loader',
       },
     ],
   },
