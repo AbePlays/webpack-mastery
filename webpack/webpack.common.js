@@ -38,4 +38,7 @@ module.exports = {
       paths: ['./src/index.html'],
     }),
   ],
+  resolve: {
+    extensions: ['.ts', '.js'],
+  },
 }

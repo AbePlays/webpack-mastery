@@ -2,7 +2,7 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "es6",
+    "module": "ESNext",
     "skipLibCheck": true,
     "strict": true,
     "target": "es6"
