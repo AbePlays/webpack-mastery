@@ -23,7 +23,8 @@ module.exports = {
     minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
   },
   output: {
-    filename: 'main.js',
+    clean: true,
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, '../dist'),
   },
   plugins: [
@@ -32,7 +33,7 @@ module.exports = {
       template: './src/index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: 'index.css',
+      filename: '[name].[contenthash].css',
     }),
     new PurgeCSSPlugin({
       paths: ['./src/index.html'],
