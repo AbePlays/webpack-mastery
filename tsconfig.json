@@ -2,9 +2,11 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
     "module": "ESNext",
+    "moduleResolution": "node",
     "skipLibCheck": true,
     "strict": true,
-    "target": "es6"
+    "target": "ES6"
   }
 }

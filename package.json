@@ -10,6 +10,8 @@
   "author": "Abhishek Rawat",
   "license": "MIT",
   "devDependencies": {
+    "@types/react": "^18.2.13",
+    "@types/react-dom": "^18.2.6",
     "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.0",
     "html-webpack-plugin": "^5.5.1",
@@ -25,5 +27,9 @@
     "webpack-cli": "^5.1.1",
     "webpack-dev-server": "^4.15.1",
     "webpack-merge": "^5.9.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

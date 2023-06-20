@@ -6,7 +6,7 @@ const TerserPlugin = require('terser-webpack-plugin')
 const path = require('path')
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: './src/index.tsx',
   module: {
     rules: [
       {
@@ -14,7 +14,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.ts$/,
+        test: /\.tsx?$/,
         use: 'ts-loader',
       },
     ],
@@ -36,10 +36,10 @@ module.exports = {
       filename: '[name].[contenthash].css',
     }),
     new PurgeCSSPlugin({
-      paths: ['./src/index.html'],
+      paths: ['./src/index.html', './src/index.tsx'],
     }),
   ],
   resolve: {
-    extensions: ['.ts', '.js'],
+    extensions: ['.ts', '.tsx', '.js'],
   },
 }
