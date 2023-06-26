@@ -21,6 +21,15 @@ module.exports = {
   },
   optimization: {
     minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          chunks: 'all',
+          name: 'vendors',
+          test: /[\\/]node_modules[\\/]/,
+        },
+      },
+    },
   },
   output: {
     clean: true,
