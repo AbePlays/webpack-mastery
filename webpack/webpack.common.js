@@ -21,6 +21,7 @@ module.exports = {
   },
   optimization: {
     minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
+    runtimeChunk: 'single',
     splitChunks: {
       cacheGroups: {
         vendor: {
