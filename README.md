@@ -1,4 +1,4 @@
-# React Webpack Mastery
+# Webpack Mastery
 
 ## Description
 
@@ -38,7 +38,7 @@ This will generate the bundled files in the `dist` directory.
 
 ## Documentation
 
-Please refer to the [Wiki](https://abeplays.notion.site/31f1baa92f7e4a469236e6b7b04c6f53?v=3d417e59325c4a22b0f8e77c126e0141&pvs=4) for detailed documentation on how to use and configure this project.
+Please refer to the [Wiki](https://abeplays.notion.site/31f1baa92f7e4a469236e6b7b04c6f53) for detailed documentation on how to use and configure this project.
 
 ## Contributing
 
