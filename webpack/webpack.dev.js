@@ -9,4 +9,24 @@ module.exports = merge(common, {
     static: ['src'],
   },
   mode: 'development',
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                exportLocalsConvention: 'camelCase',
+                localIdentName: '[path][name]__[local]',
+              },
+            },
+          },
+          'sass-loader',
+        ],
+      },
+    ],
+  },
 })

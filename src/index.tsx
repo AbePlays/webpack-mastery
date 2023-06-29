@@ -1,7 +1,7 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 
-import './index.scss'
+import style from './index.scss'
 
 const div = document.getElementById('root')
 
@@ -32,9 +32,9 @@ function TodoApp() {
   }
 
   return (
-    <div className="container">
+    <div className={style.container}>
       <h1>Todo App</h1>
-      <div className="input-container">
+      <div className={style.inputContainer}>
         <input
           onChange={(e) => setInputValue(e.target.value)}
           placeholder="Enter a todo"
@@ -46,9 +46,9 @@ function TodoApp() {
           Add Todo
         </button>
       </div>
-      <ul className="todo-list">
+      <ul className={style.todoList}>
         {todos.map((todo, index) => (
-          <li className="todo-item" key={index}>
+          <li className={style.todoItem} key={index}>
             {todo}
             <button onClick={() => deleteTodo(index)} type="button">
               Delete
