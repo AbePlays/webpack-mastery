@@ -8,6 +8,7 @@ module.exports = merge(common, {
     port: 3000,
     static: ['src'],
   },
+  devtool: 'eval-source-map',
   mode: 'development',
   module: {
     rules: [
