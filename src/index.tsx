@@ -1,6 +1,7 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 
+import banner from './banner.png'
 import style from './index.scss'
 
 const div = document.getElementById('root')
@@ -33,6 +34,7 @@ function TodoApp() {
 
   return (
     <div className={style.container}>
+      <img alt="" className={style.banner} src={banner} />
       <h1>Todo App</h1>
       <div className={style.inputContainer}>
         <input

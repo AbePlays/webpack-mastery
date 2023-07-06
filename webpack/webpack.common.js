@@ -9,6 +9,11 @@ module.exports = {
   module: {
     rules: [
       {
+        generator: { filename: 'asset/[name].[contenthash][ext]' },
+        test: /\.(png|svg|jpg|jpeg|gif)$/,
+        type: 'asset/resource',
+      },
+      {
         test: /\.tsx?$/,
         use: 'ts-loader',
       },
