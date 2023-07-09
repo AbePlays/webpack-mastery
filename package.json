@@ -4,7 +4,9 @@
   "description": "A hands-on learning project that explores React and Webpack, providing a practical and educational experience for mastering modern web development.",
   "main": "src/index.js",
   "scripts": {
+    "build:prod": "pnpm build --env appEnv=prod",
     "build": "webpack --config webpack/webpack.prod.js",
+    "start:dev": "pnpm start --env appEnv=dev",
     "start": "webpack serve --config webpack/webpack.dev.js"
   },
   "author": "Abhishek Rawat",

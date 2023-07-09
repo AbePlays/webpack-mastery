@@ -2,3 +2,9 @@
 
 declare module '*.png'
 declare module '*.scss'
+
+declare var process: {
+  env: {
+    APP_ENV: 'dev' | 'preprod' | 'prod' | 'qa'
+  }
+}
