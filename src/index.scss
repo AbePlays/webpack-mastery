@@ -22,6 +22,7 @@ h1 {
 
 .input-container {
   display: flex;
+  gap: 4px;
   margin-bottom: 10px;
 
   input[type='text'] {
@@ -40,8 +41,13 @@ h1 {
     cursor: pointer;
   }
 
-  button:hover {
-    background-color: #45a049;
+  button.clear {
+    background-color: #f44336;
+  }
+
+  button:disabled.clear {
+    cursor: not-allowed;
+    background-color: #f3877f;
   }
 }
 

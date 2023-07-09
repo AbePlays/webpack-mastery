@@ -6,6 +6,8 @@ import style from './index.scss'
 
 const div = document.getElementById('root')
 
+const ENABLE_CLEAR = process.env.APP_ENV === 'dev'
+
 if (div) {
   const root = createRoot(div)
   root.render(<TodoApp />)
@@ -47,6 +49,16 @@ function TodoApp() {
         <button onClick={addTodo} type="button">
           Add Todo
         </button>
+        {ENABLE_CLEAR ? (
+          <button
+            className={style.clear}
+            disabled={todos.length === 0}
+            onClick={() => setTodos([])}
+            type="button"
+          >
+            Clear
+          </button>
+        ) : null}
       </div>
       <ul className={style.todoList}>
         {todos.map((todo, index) => (
