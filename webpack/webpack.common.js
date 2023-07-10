@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const path = require('path')
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const { DefinePlugin } = require('webpack')
 const { validateEnvironment } = require('../app.config')
 
@@ -53,7 +54,8 @@ function config(args) {
       new DefinePlugin({
         'process.env.APP_ENV': JSON.stringify(args.appEnv),
       }),
-    ],
+      args.analyze ? new BundleAnalyzerPlugin() : null,
+    ].filter(Boolean),
     resolve: {
       extensions: ['.ts', '.tsx', '.js'],
     },
